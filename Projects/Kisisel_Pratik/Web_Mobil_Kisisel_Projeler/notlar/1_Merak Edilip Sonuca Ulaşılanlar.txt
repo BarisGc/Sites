@@ -1,0 +1,110 @@
+1) Aynı elementte birden fazla animasyon: Aynı anda yapamıyorsun. Farklı elementlerde animasyon yap, aynı anda çalıştır.
+2) Background-attachment: Local vs scroll vs fixed : fixed her durumda sabit, scroll dış kaydırmada kayar, iç kaydırmada sabit, local her durumda kayar.
+https://www.kevinpowell.co/article/background-attachment-local/
+3) Flex-basis vs width/height: arasında genelde fark yok ama flexbox içinde özel durumlarda problem olabileceği için flex-basis kullanılmalı
+4) @Font-Face vs google, tweeter vb. url fonts: font-face özel projeler dışına gerek yok, sadece performans problemi olabiliyor.
+5) font-feature-settings vs font-variant: Whenever possible, Web authors should instead use the font-variant shorthand property or an associated longhand property such as font-variant-ligatures, 
+font-variant-caps, font-variant-east-asian, font-variant-alternates, font-variant-numeric or font-variant-position.
+These lead to more effective, predictable, understandable results than font-feature-settings, which is a low-level 
+feature designed to handle special cases where no other way exists to enable or access an OpenType font feature. In particular, font-feature-settings shouldn't be used to enable small caps.
+6) flex: min-content vs max-content: 
+*The min-content sizing keyword represents the intrinsic minimum width of the content. For text content this means that the content will take all soft-wrapping opportunities, becoming as small as the longest word.
+*The max-content sizing keyword represents the intrinsic maximum width of the content. For text content this means that the content will not wrap at all even if it causes overflows.
+min-content:
+
+The minimum possible width that a content (a group of words) can have. It means the width of the biggest word in the content.
+
+Example:
+
+hi
+
+this 
+
+is
+
+biggest-word-in-the-content
+
+<------- min-content ------>
+max-content:
+
+The maximum possible width that a content (a group of words) can have. It means the width of the content when all the words are arranged together in one line.
+
+Example:
+
+hi this is a content without considering any line breaks.
+
+<---------------------- max-content ------------------->
+
+7) @import: Import the "navigation.css" style sheet into the current style sheet: performans açısından önerilmiyormuş.
+8) isolation: Does exactly what it says. It protects the element from blending into other elements that are in the backdrop.It is most commonly used when mix-blend-mode has been declared on another element. 
+Applying isolation to the element guards that element so that it does not inherit the mix-blend-mode applied to the other elements that might be behind it.
+9) italic vs oblique: As with italic and oblique, the same difference is visible when comparing italic with faux italic. You will see faux-italics wherever a normal font is skewed with font-style: italic; whereas a true italic font is designed to be slanted.
+italic: Sets the text to use the italic version of the font if available; if not available, it will simulate italics with oblique instead. oblique: Sets the text to use a simulated version of an italic font, created by slanting the normal version.
+10) word-break: break-all vs word-wrap:break-word: break-all is rarely ever used!
+
+*word-break: break-all
+This i
+s a te
+xt fro
+m an o
+ld mag
+azine
+
+As you can see the result is awful. break-all will try to fit as many chararacters into each row as possible, it will even split a 2 letter word like "is" onto 2 rows! It's ridiculous. This is why break-all is rarely ever used.
+
+*word-wrap: break-word
+This
+is a
+text
+from
+an old
+magazi
+ne
+
+break-word will only break words which are too long to ever fit the container (like "magazine", which is 8 chars, and the container only fits 6 chars). 
+It will never break words that could fit the container in their entirety, instead it will push them to a new line.
+
+11) visibility:collapse: There is more, but basically: don’t use this ever.
+12) content için quotes property: bence gerek yok çünkü browser <q>This is an English quote.</q> yapınca dile göre uygun quotes koyuyormuş : Auto quotes For most browsers, the default value of quotes is auto (Firefox 70+), or the browser otherwise had this default behavior (Chromiums, Safari, Edge), so this example works without it being explicitly being set.
+13) content: " (" attr(href) " )";    : linki title olmadan da gösterip tıklatmaya yarıyor.
+<style>
+a:after {content: " (" attr(href) ")";}
+</style>
+<p><a href="https://www.w3schools.com">Visit W3Schools</a></p>
+14) aural vs speech: CSS2.1 and Media Queries 3 defined several additional media types (tty, tv, projection, handheld, braille, embossed, and aural), 
+but they were deprecated in Media Queries 4 and shouldn't be used. The aural type has been replaced by speech, which is similar.
+15) text-area: soft-wrap vs hard-wrap: soft: The text in the textarea is not wrapped when submitted in a form. This is default
+hard : The text in the textarea is wrapped (contains newlines) when submitted in a form. When "hard" is used, the cols attribute must be specified
+16) src vs srcdoc: Artık src kullanılmasında güvenlik problemi modern browserlarda olmadığı için srcdoc gerekli değil.
+Inline elements vs Block elements vs Inline-block elements:
+
+Inline elements:
+******************
+respect left & right margins and padding, but not top & bottom
+cannot have a width and height set
+allow other elements to sit to their left and right.
+see very important side notes on this here.
+
+Block elements:
+******************
+respect all of those
+force a line break after the block element
+acquires full-width if width not defined
+
+Inline-block elements:
+******************
+allow other elements to sit to their left and right
+respect top & bottom margins and padding
+respect height and width
+
+17) <button> vs input type="button" vs links : Button daha yeni, input type kullanmana gerek yok. Linkler ise accessability açısından uygunsuz.
+TL:DR
+*DIV s and SPAN s are not buttons
+*If it navigates, it is a link. Use link markup with a valid hypertext reference
+*If it triggers an action, it is a button. Use a BUTTON element
+*If you don’t like how a button looks, style it with CSS.
+
+18) transition property: property olmadan nasıl yapılıyor? Like Sean said the initial value for transition is all. This does not mean you should use it like that though. It is known that using the initial value could cause drawbacks in performance, read this.
+It is better if you declare each value that you want your transition be applied to. You may not see the performance hit at first, but as you keep extending your CSS file it is something you want to keep an eye on.
+19) Transition performance: Width trans etmek yerine scale ile transform etmek daha performanslıymış çünkü tekrar çizilmiyormuş.
+20) left vs margin-left: positionlarla çalışırken left kullan böylece diğer elementler etkilenmez, margin-left kullanırsan flow değişebilir.

@@ -1,0 +1,15 @@
+1)external script yüklerken async koymayı unutma ama gene de bunu sorgula
+2) grid template yaparken her bir row ve column için birer tane tanım yap, bunların ebatlarını daha sonra ayarla
+3) relative absolute position'da akış sırası önemli
+4) grid taşmasını engellemek için containera overflow hidden koy
+5) Sticky veya fixed position olanlar grid view'den çıkıyormuş, ayrıca sticky koyduysan top koymayı unutma
+6) float, grid view'de kullanılamazmış. Flex ve grid birbiri içinde kullanılabiliniyor.
+7) .active:after kodlarda ikinci bir class da yazmayı unutma yoksa bütün .active'ler etkilenir. Ayrıca
+.active diğer class arasında boşluk olmayacak. Olması gereken: .collapsible.active:after 
+not: .footer-distributed .footer-links a:before  !!!!  bu da doğruymuş ????
+8) logo için background-image kullan, hiç kasma öbür türlü şimdilik
+9) .grid-container > div       yazıldıysa     içindekilere .articlebox > h1  veya .articlebox > p  yazsan bile ezip geçiyor.
+10) item pozisyonlamada sıkışırsan relative yap öyle pozisyonla.
+11) Js, counter variable'ı const olmaz çünkü değişiyor.
+12) if içinde "=" değil "==" olacak.
+13) input type, submit görevi gördüğü için refresh yapıyor, bu sebeple <button> kullan

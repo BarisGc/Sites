@@ -1,0 +1,111 @@
+/**********************  general css *************************/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+  }
+
+.flex-container-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+    
+    
+}
+
+/********************** header css *************************/
+
+.flex-item-header{
+    
+    display:flex;
+   
+    
+}
+
+/********************** section css *************************/
+
+.flex-item-section{
+  
+    display:flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    width: 1180px;
+    align-items: center;
+}
+
+.header-input-label-position {
+    display:block;
+    text-align:center;
+    width: 300px;
+   
+}
+
+
+
+
+
+
+/********************** nav css *************************/
+
+.flex-item-nav{
+    display:flex;
+    flex-direction: row;
+    width: 1180px;
+    text-align: center;
+ 
+}
+
+.flex-item-nav-subcontainer1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #7EE5DA;
+    flex: 2;
+    justify-content: center;
+    
+}
+
+.flex-item-nav-subcontainer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #70CCC2;
+    flex: 1;
+    justify-content: center;
+}
+
+.flex-item-nav-subcontainer3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #62B3AA;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.nav-input-label-position {
+    display:block;
+    text-align:center;
+    
+   
+}
+
+.flex-item-nav-subcontainer4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px
+}
+
+/********************** footer css *************************/
+
+.flex-item-footer {
+    text-align: center;
+    width: 1180px;
+}

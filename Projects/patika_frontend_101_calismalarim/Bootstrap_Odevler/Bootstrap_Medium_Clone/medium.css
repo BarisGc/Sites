@@ -1,0 +1,74 @@
+/* navbar css starts */
+
+
+  .navBarContainer .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+@media (max-width: 768px) {
+  .navBarContainer .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+
+
+
+
+/* navbar css ends */
+
+/* header css starts*/
+
+
+.headerSection1 {
+  background-image: url(assets/header_background_words.PNG);
+  background-repeat: no-repeat;
+  background-size: 385px 341px ;
+  background-position: 90% 100%; 
+  }
+
+
+@media (max-width: 767px) {
+  .headerSection1 {
+    background-image: url(assets/header_background_words.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:300%;
+  }
+}
+
+
+
+
+
+/* header css ends*/
+
+/*  main starts  */
+/* main_section1 starts */
+
+
+
+
+
+/* main section2 starts && aside && footer start  */
+
+
+
+
+.mainSection2 .hstack > div {
+  background-color: #ffffff;
+}
+
+.mainSection2 .aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 930px;
+}
+
+
+/* main section2 starts && aside && footer end  */

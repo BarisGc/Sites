@@ -1,0 +1,68 @@
+
+header p {
+    color: red;
+    font-size: 50px;
+    margin-left: 40%;
+}
+
+.genel_position_center {
+    margin-left: 40%;
+}
+
+.ürünlerimiz_position_center {
+    margin-left: 45%;
+}
+nav a {
+    color: blueviolet;
+    font-size: 20px;
+    float: left;
+    margin-left: 15px;
+}
+
+article h1 {
+    color:seagreen;
+    font-size: 30px;
+    margin-left: 100px;
+    
+}
+
+.giriş_mesajı {
+    margin-left: -400px;
+}
+
+article h2 {
+    color:orangered;
+    font-size: 25px;
+}
+
+.ürünlerimizH1 {
+    color:seagreen;
+    font-size: 25px;
+    margin-left: 15px;
+    
+}
+
+.ürünlerimizContent {
+    margin-left: -20px;
+}
+
+
+  .UrunBaslik {
+    color:orange;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  section img {
+      width: 200px;
+      height: auto;
+  }
+
+  article i {
+    
+    font-size: 15px;
+}
+
+    .clear {
+            clear:left;
+    }

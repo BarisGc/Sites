@@ -1,0 +1,126 @@
+.sosyal-icon > a{
+    float: left;
+    margin-right: 0px !important;
+}
+.ozelBaslik{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.ozelButon{
+    width: 250px;
+    padding: 10px 25px;
+    background-color: #00a79e;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.ozelButon:hover{
+    background-color: #007771;
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    background-color: white;
+}
+#banner{
+    margin-top: 90px;
+    background-color: #EEE;
+}
+.carousel-caption{
+    left: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-left: solid 5px #00a79e;
+    width: 350px;
+}
+.carousel-caption p{
+    font-size: 30px;
+    color:#00a79e;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+#hakkimizda{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #EEE;
+}
+#hakkimizda img{
+    border-radius: 100px;
+}
+#hakkimizda p{
+    text-align: center;
+}
+#muzeler{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: white;
+}
+.card-img-overlay{
+    top:auto;
+}
+#sehirler{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #EEE;
+}
+#sehirler .card-title{
+    text-align: center;
+}
+#sehirler .card-text{
+    text-align: center;
+}
+#iletisim{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: white;
+}
+.yukari{
+    right: 10px;
+    bottom: 5px;
+    position: fixed;
+}
+
+/*Page Style*/
+.yonlendirme{
+    margin-top: 110px;
+}
+.icerik{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.adresBilgileri{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #EEE;
+}
+.adresBilgileri .kutu{
+    background-color: white;
+    padding: 10px;
+}
+.adresBilgileri .kutuIcon{
+    font-size: 70px;
+    text-align: center;
+    color: #00a79e;
+}
+.adresBilgileri .kutuBaslik{
+    text-align: center;
+    font-size: 25px;
+}
+.adresBilgileri p{
+    text-align: center;
+}
+/*Page Style*/
+
+@media(max-width:992px) {
+    #acilirMenu .nav-link{
+        border-bottom: 1px solid #CCC;
+    }
+    .sosyal-icon > a{
+        border-bottom: none !important;
+    }
+}

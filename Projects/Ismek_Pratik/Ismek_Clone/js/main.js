@@ -1,0 +1,4 @@
+function kontrol(){
+
+    return false;
+}

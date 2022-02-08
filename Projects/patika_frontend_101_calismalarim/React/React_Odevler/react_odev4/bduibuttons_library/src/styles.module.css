@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  align-items: center;
+}
+
+button.primary {
+  margin: 5px;
+  padding: 5px;
+  background-color: blueviolet;
+}
+
+button.dashed {
+  margin: 5px;
+  padding: 5px;
+  border-style: dashed;
+  border-color: gray;
+  background-color: cadetblue
+}
+
+button.text {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  color: black;
+  font-style: italic;
+}
+
+button.link {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  color: blue;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}

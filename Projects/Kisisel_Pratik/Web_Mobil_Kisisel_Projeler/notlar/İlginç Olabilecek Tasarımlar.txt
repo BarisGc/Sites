@@ -1,0 +1,1 @@
+1) INPUT textlerde Focuslar arası geçişlerde focus öncesi ve sonrası border farkı olursa ilginç ve güzel bir görüntü oluyor.

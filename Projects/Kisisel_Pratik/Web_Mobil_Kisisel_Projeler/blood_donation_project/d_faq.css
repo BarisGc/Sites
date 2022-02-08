@@ -1,0 +1,417 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+/* c_blood_donation_test layout ------------------------------------------------------*/
+
+:root{
+
+    --blue: #163863;
+    --white: #f2f2f2;
+    --lightwhite: #eee;
+    --red: #bb0000;
+    --green: seagreen;
+    --lightgreen:lightseagreen;
+    --darkgray: rgb(124, 124, 124);
+    --lightgray: rgb(196, 196, 196);
+    --black: rgba(0,0,0,1);
+    --yellow:yellow;
+    --pink:pink;
+    --teal:#2196F3;
+}
+
+
+/* c_blood_donation_test layout ------------------------------------------------------*/
+
+* {  box-sizing: border-box;}
+
+body{font-family: Arial, Helvetica, sans-serif;
+  margin: -0.50vw;
+  overflow-x: hidden;
+  background-color: var(--lightwhite);
+  
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-areas:
+  
+    'topbar topbar topbar aside1'
+    'faqSection faqSection faqSection aside1'
+    'footer-distributed footer-distributed footer-distributed aside1';
+
+  grid-gap: 0;
+  padding: 0.45vw 0.45vw 0 0.45vw;
+  
+  grid-template-columns: 35% 25% 25% 15%;
+  grid-template-rows:5.6vw 20vw 25w 16vw;
+}
+  
+
+/* c_blood_donation_test topbar ------------------------------------------------------*/
+
+
+.topbar { grid-area: topbar;
+     overflow: hidden;
+    background-color:  #bb0000 !important;
+    transition: 0.4s;
+    position: relative;
+    top: 0;
+    z-index: 10;
+  }
+  
+  #logo {
+  
+    background: url("blood-transfusion.svg");
+    background-size: 5vw 5vw;
+    background-repeat: no-repeat;
+    background-position: 6vw 0.4vw;
+    
+  
+      
+  }
+
+.topbar a {
+    
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+   margin:1vw;
+   font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+.topbar a:hover {
+    background-color: rgb(243, 242, 242, 0.8);
+    color: black;
+  
+  }
+  
+
+
+  .fa {
+    padding: 1vw 1vw;
+    font-size: 1.2vw;
+    width: 4vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 1vw;
+    border-style:groove;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* faqSection ------------------------------------------------------*/
+
+  .faqSection { grid-area: faqSection;}
+
+  .faqSection summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  .faqSection details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  .faqSection details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  .faqSection details > summary::-webkit-details-marker {
+    display: none;
+  }
+        
+  
+  
+
+  /* c_blood_donation_test footer ------------------------------------------------------*/
+
+  
+    .footer-distributed{
+      font-family: Open Sans;
+      grid-area: footer-distributed;
+      background: #666 !important;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 0.15vw 0.15vw;
+      margin-bottom: 0; 
+  
+      
+    }
+    
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    /* Footer left */
+    
+    .footer-distributed .footer-left{
+      width: 40%;
+    }
+    
+    /* The company logo */
+    
+    .footer-distributed h3{
+      color:   #bb0000;
+      font: normal 4vw 'Open Sans', cursive;
+      margin: 0;
+    }
+    
+    .footer-distributed h3 span{
+      color:  #ffffff;
+    }
+    
+    /* Footer links */
+    
+    .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 2vw 1vw 1vw;
+      padding: 0;
+      
+    }
+    
+    .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+      font-weight:200;
+      text-decoration: none;
+      color:  inherit;
+      font-style: italic;
+    }
+    
+    .footer-distributed .footer-company-name{
+      color:  lightseagreen;
+      font-size: 1.2vw;
+      font-weight: normal;
+      margin: 1vw;
+    }
+    
+    /* Footer Center */
+    
+    .footer-distributed .footer-center{
+      width: 35%;
+    }
+    
+    .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 1.5vw;
+      width: 3vw;
+      height: 3vw;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 3.5vw;
+      margin: 1vw 1.5vw;
+      vertical-align: middle;
+    }
+    
+    .footer-distributed .footer-center i.fa-envelope{
+      font-size: 1.5vw;
+      line-height: 2.7vw; 
+      padding:0;
+    }
+  
+    .footer-distributed .footer-center i.fa-map-marker{
+      font-size: 1.5vw;
+      line-height: 2.7vw; 
+      padding:0;
+    }
+  
+    
+  
+    .footer-distributed .footer-center i.fa-phone{
+      font-size: 1.5vw;
+      line-height: 2.7vw; 
+      padding:0;
+    }
+    
+  
+    .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+      font-weight:400;
+      vertical-align: middle;
+      margin:0;
+    }
+    
+    .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:1.2vw;
+      line-height:2vw;
+    }
+    
+    .footer-distributed .footer-center p a{
+      color: #fff;
+      text-decoration: none;
+      font-style: italic;
+    }
+    
+    .footer-distributed .footer-links a:before {
+      content: "|";
+      font-weight:300;
+      font-size: 1vw;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 0.5vw;
+    }
+    
+    
+    
+  
+  
+    
+    .footer-distributed .footer-links .link-2:before {
+      content: none;
+    }
+    
+    
+    /* Footer Right */
+    
+    .footer-distributed .footer-right{
+      width: 20%;
+    }
+    
+    .footer-distributed .footer-company-about{
+      line-height: 2vw;
+      color:  #92999f;
+      font-size: 1vw;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 1.5vw;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    
+   
+  
+    
+    
+    
+    .footerbutton {background-image: linear-gradient(to right, #E6DADA 0%, #274046  51%, #E6DADA  100%)}
+    .footerbutton {
+       margin: 10px;
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+       position: relative;
+       top: 5vw;
+       right: 2vw;
+     }
+  .footerbutton a{
+    color:white;
+  }
+     .footerbutton:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     }
+
+  /* c_blood_donation_test asid1&fixedsidenav ------------------------------------------------------*/
+
+.aside1 { grid-area: aside1;
+  
+  
+ }
+
+#sidenav {
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: rgb(49, 49, 49) ;
+ 
+  overflow:hidden;
+ 
+  
+  
+  padding-top: 20px;
+}
+
+#sidenav a {
+  
+  padding: 0.9vw;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  
+}
+
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#navphoto {
+  width: 25vw;
+  height: auto;
+  object-position: -2vw;
+  margin: 0;
+  padding-bottom: 1vw;
+  
+}
+    

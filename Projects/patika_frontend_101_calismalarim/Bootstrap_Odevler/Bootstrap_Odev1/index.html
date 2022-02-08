@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom Css -->
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+    
+        body {
+            background-color: #E9ECEF;
+        }
+        .navBrandColor {
+            color:red;
+        }
+        
+        .text-responsive-h1 {
+        font-size: calc(100% + 1vw + 1vh);
+        }
+
+        .text-responsive-h2 {
+        font-size: calc(50% + 1vw + 1vh);
+        }
+
+        .text-responsive-p {
+        font-size: calc(25% + 1vw + 1vh);
+        }
+
+        @media only screen and (max-width: 600px) {
+            #karsilama_mesaji {
+            width: 125px;
+            
+            }    
+        }
+
+        .buttonLinks a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        .buttonLinks a:hover {
+            text-decoration: none;
+            color: white;
+            
+            
+            
+        }
+
+    </style>
+        
+    <title>Keçe Market</title>
+    <!-- sorular -->
+    <!-- 1) index.html: Metin bazlı içeriklerde farklı divlerdeki metinleri birbirlerine göre hizalamak için özelliklede responsive olabilmesi için hep ince ayar yapmak zorunda mıyız yoksa  bootstrap mantalitesine göre yapılabiliyor mu? mesela iphone x görünümünde button ve liste tam hizalı değil -->
+  </head>
+
+  <body>
+            
+            <!-- Navbar Start -->
+            <!-- Navbar End -->
+            <!-- Header Start -->
+            <!-- Header End -->
+            <!-- Section Start -->
+            <!-- Section End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger my-auto fs-3 " href="index.html">
+                <img src = "seallogo.svg" alt="brandlogo">
+                 Keçe Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Urunlerimiz.html">Ürünlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+      <div class="container-fluid">
+        <section class="row">
+          <div class="col-12  border-bottom border-secondary mt-0 p-3 text-dark rounded-3" style="background-color: #dadada">
+                    <div id="karsilama_mesaji" class="col-2 offset-5 text-danger text-responsive-h1 mx-auto">
+                        <h1 >Merhaba!</h1>
+                    </div>
+                    <div class="col-10 offset-1 text-responsive-p" >
+                        <p><strong><i>Keçe Market</i></strong> sitemize hoş geldiniz! Bu sitede çeşitli keçe türlerini bulabilirsiniz. Uygun fiyatlarımız ve kaliteli ürünlerimiz için 
+                            
+                            <a href="Urunlerimiz.html" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Ürünlerimiz</a> sayfamızı ziyaret edebilirsiniz.
+
+                            
+                        </p>
+                    </div>
+                </div>  
+          </div>
+        </section>
+    </div>  
+    <!-- Header End -->
+
+    <!-- Section Start -->
+    <div class="container-fluid"></div>
+        <section class="row">
+            <ol class="col-6 offset-3 list-group list-group-numbered my-4 d-grid gap-2 ">
+                <h2 class= " mx-auto text-warning text-responsive-h2"  >Sitemizde Bulunan</h2>
+                <h2 class= " mx-auto text-warning text-responsive-h2"  >Keçe Türleri</h2>
+                <li class="list-group-item list-group-item-primary text-responsive-p " >Otomotiv Keçeleri</li>
+                <li class="list-group-item list-group-item-primary text-responsive-p">Beyaz Eşya Keçeleri</li>      
+            </ol>
+         </section>
+     </div>
+     
+     <div class="container-fluid">
+         <div class="row">
+             <div class="d-grid gap-2 col-6 col-md-4 col-lg-2 mx-auto">
+                <button type="button" class="btn btn-primary btn-lg ">
+                <a class="text-light " href="hakkimizda.html" style="text-decoration: none;">Hakkımızda</a>
+                </button>
+             </div>
+         </div>
+     </div>
+     <!-- Section End -->
+
+
+
+
+      
+    
+
+    
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+
+</html>

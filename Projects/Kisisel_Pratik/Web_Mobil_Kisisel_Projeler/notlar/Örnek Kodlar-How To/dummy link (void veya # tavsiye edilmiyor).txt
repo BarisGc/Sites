@@ -1,0 +1,12 @@
+button.link {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  color: #00f;
+  text-decoration: underline;
+  font: inherit;
+}
+<p>A button that looks like a <button type="button" class="link">link</button>.</p>

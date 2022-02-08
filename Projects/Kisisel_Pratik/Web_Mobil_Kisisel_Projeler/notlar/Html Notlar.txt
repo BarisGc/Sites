@@ -1,0 +1,55 @@
+ 1) Tooltip'de tek ya da çift quote olmalı çünkü boşluk varsa veya göbek adı gibi quote varsa sıkıntı olur.
+İhtiyaca göre tek tırnaklar içinde çift tırnaka alınmış kelime veya tam tersi şeklinde quote yapılabilir.
+2) Horizontal rule şudur: <hr>    : ------------------------------
+3) A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+4) The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+5) The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+6) Subscript text can be used for chemical formulas, like H2O:
+7) Superscript text can be used for footnotes(dipnot), like WWW[1]:
+8) Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. 
+9)The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+10)Note: A person's name is not the title of a work.
+The text in the <cite> element usually renders in italic.
+11) <blockquote cite="http://www.worldwildlife.org/who/index.html">  bu cite ile
+bu cite -10.madde- <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+farklı!
+12) <p>If your browser supports bi-directional override (bdo), 
+the next line will be written from right to left (rtl):</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+13) Shades of gray are often defined using equal values for all three parameters:
+14)Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. 
+So, if you set the color of the body text to "blue", all headings, paragraphs, 
+and other text elements within the body will also get the same color (unless you specify something else)!
+15)The <caption> tag must be inserted immediately after the <table> tag.
+16)Use the CSS property float:left to display a list horizontally
+17)
+CSS NOTLAR:
+
+1) CSS LINKS: CURSOR, HOVER, ACTIVE, VISITED
+2) link propery sıralamaları: * hover after link and visited * active after hover
+3) Table-layout property: The main benefit of table-layout: fixed; is that the table renders much faster. 
+On large tables, users will not see any part of the table until the browser has rendered the whole table. 
+So, if you use table-layout: fixed, users will see the top of the table while the browser loads and renders 
+rest of the table. This gives the impression that the page loads a lot quicker!
+4) float + clear: When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float
+, but the cleared element will appear below it on the web page.
+5) We also use the box-sizing property to make sure that the box doesn't break due to extra padding.
+6) line-height: For example, 12px font-size and 4px distant from the bottom and upper lines:
+line-height: 20px; /* 4px +12px + 4px */
+7) Navigasyon-Menüler: *Değişebilir* yatayda inline-block, dikeyde block kullan
+8) Pseudo-Element: The ::first-line and ::first-letter pseudo-element can only be applied to block-level elements.
+9) Tooltip: span:hover + div {
+  display: block;
+}
+10) %100 width: When you give an element a width of 100% in CSS, you’re basically saying “Make this element’s content area exactly equal to the explicit width of its parent — but only if its parent has an explicit width.”
+11) Combinators: Lİ+Lİ
+12) Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+This does not happen on horizontal (left and right) margins! Only vertical (top and bottom) margins!
+13) @media: meaning of the not, only and and keywords: The not keyword inverts the meaning of an entire media query.
+only: The only keyword prevents older browsers that do not support media queries with media features from applying the specified styles. It has no effect on modern browsers.
+and: The and keyword combines a media feature with a media type or other media features.
+They are all optional. However, if you use not or only, you must also specify a media type.
+14) Hidden elements take up space on the page. Use the display property to both hide and remove an element from the document layout!
+15) content içindeki font için size belirlemezsen göremezsin xD bu arada content "" şeklinde yani boş olursa borderlar her yeri kaplıyor büyük oranda. Bunu arrow yapmak için kullan.

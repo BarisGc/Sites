@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<title>seal3-svg-svg</title>
+	<defs>
+		<image  width="40" height="40" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAHVQTFRFqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAAqgAA7rGXNQAAACd0Uk5TADFAJoDM34/1/79tto6SaKpJVYpkLmB2R+8wpujUNYtGc0Vb8TN/7CA56wAAAQ9JREFUeJyVlNm2gyAMRSPS1qTzoJ2ut3P//xNLgVYRkPQ8uCBuQyByABxlIgc5GI4gFxn0SBaIhKgfhYxR48kUHc1oHuIWGNDC55YhDnHVwdZE5kUTCiYdYxdroRsv5Nejw9TMRYQzJJXufkOczWnLlD2cJSs9nPRxhtzq0TQN7r4rxzlDqr5nBQfE0hxNH2dAAXkSfJP7AwBxQFXjkZVRkX88sIYBD6T0MRqw4m+Gdzy/HDizhf/8nwLglP7NznpEadC4yzx9FawNcC+XspPo6u183zJjBtCOrzHkFTYYNJ+GtVOijfu1tRVPJXjiGilAdbm61FneQtxbqu933Xt5/7QjolI84FnXEh6iU90LXmYUr7YeKxwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width: 0.324;stroke-dasharray: 0,1 } 
+	</style>
+	<g id="layer1">
+		<use id="path4521" href="#img1" x="0" y="0" />
+		<path id="path4523" class="shp0" d="M36.39 19.95C36.39 29.03 29.03 36.39 19.95 36.39C10.88 36.39 3.52 29.03 3.52 19.95C3.52 10.87 10.88 3.51 19.95 3.51C29.03 3.51 36.39 10.87 36.39 19.95Z" />
+	</g>
+</svg>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Blood Donation Application System">
+  <meta name="keywords" content="Blood, Donation, Application, Test, Needle, Share, Donor, Bone Marrow">
+  <meta name="author" content="Baris Devrim">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="b_homepage.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script src="https://kit.fontawesome.com/fbec744f72.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--layout container -------------------------------------------------------->
+  <div class="grid-container">
+
+
+    <!--topbar -------------------------------------------------------->
+    <div id="logo" class="topbar">
+
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+
+
+      <a href="#appointment">RANDEVU AL</a>
+      <a href="#importantlink">KIZILAY.ORG.TR</a>
+      <a href="#wheretodonate">BAĞIŞ NOKTALARI</a>
+
+
+    </div>
+
+    <!--stickyheader -------------------------------------------------------->
+
+
+
+
+    <div class="stickyheaderbutton">
+      <img src="../b_homepage_photos/header/kan_test_formu.PNG" alt="kan_test_formu">
+      <a href="c_blood_donation_test.html"><button class="stickybutton" >ÇEVRİMİÇİ DONÖR YETERLİLİK TESTİ</button></a>
+    </div>
+
+    <div class="stickyheaderpara">
+      <h1>Randevu almadan önce Çevrimiçi Donör Yeterlilik Testine Girerek;</h1>
+      <p>
+        -Sağlık çalışanlarının ve kendinizin değerli vakitlerinden tasarruf edilmesini sağlayabilirsiniz
+        <br><br>
+        -Bağışın gerçekleşeceği hastaların güvenliğini sağlayabilirsiniz.
+        <br>
+      </p>
+
+      <button class="collapsible"><b>ÇÜNKÜ;</b></button>
+      <div class="content">
+        <p>Bağışlarınıza yapılan tahlillerin sonuçları her ne kadar yüksek oranda
+          güvenilir olsa da, bağışlarınızdaki hastalıklar kuluçka süreleri sebebiyle tahlillerde yakalanamayabilir.
+          Bu sebeple, sizden bağış öncesi doldurumanızın isteneceği test formunda, doğru bilgileri vermeniz çok
+          önemlidir.
+          <br><br>
+          Çevrimiçi Donör Yeterlilik Testi üzerinden bu formu herhangi bir baskı altında kalmadan
+          rahat ve güvenli bir şekilde doldurabilirsiniz. Test sonucunun olumlu olması durumunda bağış
+          işlemleri için randavu alarak sürece devam edebilirsiniz. Test sonucunun olumsuz olması durumunda
+          iletişim adreslerinden gerekli bilgileri alabilirsiniz.
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <!--slideshow-container -------------------------------------------------------->
+
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="../b_homepage_photos\section\sectionphoto1.jpg">
+        <div class="slideshownumbertext">1/6</div>
+        <div class="slideshowtext">Onun Sana ihtiyacı var...</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" style="object-position: 0 -1vw;" src="../b_homepage_photos\section\sectionphoto2.jpg">
+        <div class="slideshownumbertext">2/6</div>
+        <div id="photo2text" class="slideshowtext">Yardım etmenin Keyfi <br>çok farklıdır...</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="../b_homepage_photos\section\sectionphoto3.jpg">
+        <div class="slideshownumbertext">3/6</div>
+        <div class="slideshowtext">Bağışçı olabilmek için Geç değil...</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" src="../b_homepage_photos\section\sectionphoto4.jpg">
+        <div class="slideshownumbertext">4/6</div>
+        <div id="photo3_6text" class="slideshowtext">Bağış yapmalısın...</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" style="object-position: 0 -6vw" src="../b_homepage_photos\section\sectionphoto5.jpg">
+        <div class="slideshownumbertext">5/6</div>
+        <div class="slideshowtext">Hayat kurtarabilirsin...</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slideshowimg" style="object-position: 0 -10vw" src="../b_homepage_photos\section\sectionphoto6.jpg">
+        <div class="slideshownumbertext">6/6</div>
+        <div id="photo3_6text" class="slideshowtext">Kan sürekli İhtiyaçtır...</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div class="dots_of_slideshow-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <div class="articlebox">
+      <h1>KAN BAĞIŞI HAYATİ BİR ÖNEM TAŞIR!</h1>
+      <p>Kan, en temel yaşam kaynağıdır. Bir canlıda, kan akışının durması demek,
+        hayatının sona ermesi anlamına gelmektedir. Yetişkin bir insanda ortalama 5-6 litre kan bulunur.
+        Kan, akciğerden aldığı oksijeni dokulara ve dokularda üretilen karbondioksidi akciğere taşır.
+        Gerekli besin ve hormonları, dokuların süzgecinden geçirir.
+        İletirken de, artık maddeleri atmak için akciğer, karaciğer ve böbrek gibi organlara taşır.
+        Ayrıca vücut ısı dengesini sağlar, asit-baz dengesini korur. Kanserojen maddelerden, yabancı maddelerden,
+        mikroplardan ve virüslerden korur. Pıhtılaşma yaparak kan kayıplarını önler.
+        İnsanların vücudunda gerekenden az bulunduğu durumlarda, kan alışverişinin yapılmasına neden olmaktadır.
+        Kanın, insan hayatındaki önemi hayati seviyededir.
+      </p>
+      <h2>Kan Bağışı Nasıl Yapılır?</h2>
+      <p>Kan bağışı yapmak için, duyarlı ve gönüllü vatandaşlar kan alma merkezlerine giderek kan verebilmektedirler.
+        Bir birey, özel hastaneler, sosyal güvenlik kuruluşları ve kan istasyonlarına giderek kan bağışında bulunabilir.
+        Kan verecek kişinin 18-65 yaş grubunda olup en az 50kg olması gerekmektedir.
+        Kan bağışında bulunacak kişi, bir seferde en fazla yarım litre kan verebilmektedir.
+        Yani, sahip olunan kanın %8-%9’unu verilebilir.
+        Erkekler iki ayda bir, kadınlar ise üç ayda bir kan bağışında bulunabilmektedirler.
+        Kan bağışından sonra hücreler kendini yaklaşık 2 ayda toparlar. Bu yüzden, periyodik olarak kan vermede herhangi
+        bir sorun öngörülmez.
+        Aksine, faydaları olduğunu söylenebilir. Her yıl, yaklaşık 4 ünite kan bağışlanabilmektedir.
+        <br>
+      </p>
+      <p>
+        Kan verme işleminden önce, parmaktan alınan kan ile kan grubu ve hemoglobin miktarı kontrol edilir.
+        Tansiyon ölçülür ve değerlerin normal aralıklarda olması durumunda kan alma işlemi gerçekleştirilir.
+        Kan torbaları, tek kullanımlık olduğu için herhangi bir kontaminasyon riski bulunmamaktadır.
+        Kan bağışının, kilo aldırma, zayıflık, bağımlılık, alerjik reaksiyon, halsiz bırakma gibi yan etkileri yoktur.
+        Hatta kan bağışı yapan birinin; AIDS, sifiliz, hepatit B ve C gibi herhangi bir hastalığının olup olmadığının da
+        ortaya çıkacaktır.
+        Kan bağışı esnasında ve sonrasında, kısa süreli baygınlık, soğuk terleme, bulantı gibi geçici reaksiyonlar
+        görülebilir.
+        Kan, çeşitli durumlarda kullanılmak üzere uygun koşullarda korunur. Kan, sadece kan nakli için değil, alyuvar,
+        akyuvar ve trombosit üretimi içinde gereklidir.
+        Bu şekilde, birçok kan ürünü elde edilebilmektedir.
+      </p>
+
+      <h3>Kan Bağışı Neden Önemlidir?</h3>
+      <p>Yılda bir veya iki kez yapılacak olan kan bağışı birçok insana yaşam umudu olabilir.
+        Her gün çeşitli kazalar, yaralanmalar ve operasyonlar gerçekleşmektedir.
+        Bu noktada, kan ihtiyacı hayati önem taşır. Kanamalı hastalığı olan bir hastanın,
+        ameliyatta 6-8 ünite kana ihtiyacı olabilmektedir. Bu hastanın, kurtulabilmesi için
+        kan gereksinimi olduğu unutulmamalıdır. Kan bağışının olmadığı bir toplumda,
+        her gün binlerce kişi hayatını kaybedebilir. Bu sebep ile, düzenli kan bağışında bulunmak
+        insanların hayatını kurtarır. Kan bağışı, bir sosyal sorumluluk olup, bir gün herkesin
+        kana ihtiyaç duyacağı da bir gerçektir. Kan bağışının ücretsiz gönüllülük esasında yapıldığının da
+        unutulmaması ve bu bilinç ile yapılması gerekir. Kan bağışı yapan kişi ile aynı soyadı taşıyan
+        yakınlarına kan bağışında öncelik tanınarak kan sigortası sağlanabilmektedir.
+      </p>
+
+      <h4>AFEREZ</h4>
+      <p>
+        Aferez; kan bağışçısının kanında bulunan ve hastanın ihtiyacı olan kan bileşeninin (eritrosit, trombosit veya
+        plazma) alınması ve diğer bileşenlerin kan bağışçısına geri verilmesi işlemidir.
+        Türk Kızılay Kan Bağış Merkezleri trombosit aferezi yapmaktadır.
+        Trombosit aferez işlemi, kan bağışçı ile aferez cihazı arasında, hasta için gereken kan bileşenin elde
+        edilmesini sağlayan bir kan bağışı türüdür.
+        Cihaz bağışçının kanını küçük miktarlarda alarak gerekli olan trombositi ayırır ve kanın trombosit dışında kalan
+        kısmı bağışçıya geri verir.
+        Bu işlem cihazdan cihaza değişiklik göstermekle birlikte ortalama 45-90 dakika kadar sürer.
+      </p>
+      <b>Aferez işleminin sakıncası var mıdır?</b>
+      <p>
+        Aferez işlemi esnasında kanın ayrıştırılması için kullanılan setler tek kullanımlık ve sterildir. Setler kapalı
+        sistem olarak çalışmakta olup kanın cihaz ile teması söz konusu değildir.
+        Bu nedenle aferez işlemi süresince hastalık bulaşması söz konusu değildir.
+      </p>
+
+      <h5>KÖK HÜCRE</h5>
+      <P>
+        Yaşam boyu kendi kendini yenileme ve farklı, tamamen olgun hücrelere dönüşebilme kapasitesine sahip hücrelerdir.
+        İhtiyaç olduğu zaman kendilerinden sonraki hücrelere farklılaşarak, hücrelerin gelişimini, olgunlaşmasını ve
+        çoğalmasını sağlarlar.
+        Damar yolu ile verildiğinde kemik iliğine yerleşir ve hematopoezi (kan hücrelerinin oluşumu) başlatırlar.
+        HLA, bir kişinin dokusunun diğer bir kişiye ne kadar uyduğunu gösterir. HLA doku tipi kalıtsal olup, kişinin
+        kardeşleri varsa ikizi en iyi eşleşme ihtimali olan kişilerdir. Hastanın ailesi içerisinde eşleşme bulunamaz ise
+        tarama sizin gibi akraba olmayan kişiler arasında yapılmaya başlanır. Bir bağışçının, bir hasta için uygun
+        olduğunun belirlenmesi, HLA doku tiplerinin eşleşmesi ile olur. Bağışçı ve hastanın HLA sonuçlarının yüksek
+        oranda eşleşmesi, en iyi nakil sonucunun alınmasına neden olur.
+      </P>
+
+      <b>Kök Hücre Tedavisi Uygulanan Hastalıklar;</b>
+      <pre>
+-Kemik iliği kanserleri
+
+-Lenfomalar
+
+-Çeşitli organ kanserleri
+
+-Kemik iliğinin yetersiz çalıştığı veya çalışmadığı durumlar
+
+-Kalıtsal anemiler
+
+-İmmün yetersizlikler
+
+-Kalıtsal metabolik hastalıklar
+        </pre>
+      <b>Kök Hücre Bağışçısı olmak için;</b>
+      <p>
+        Başvuru sonrası bir bilgilendirme görüşmesi yapılır. Eğer bağışı kabul ederseniz, Gönüllü Kök Hücre Bağışçısı
+        Bilgilendirme ve Onam Formunu doldurup imzalayarak bu bağışı resmi olarak onaylamanız sizden istenir. Ardından
+        kan grubunuzun belirlenmesi, enfeksiyon hastalıkları açısından test edilmesi (HIV, Hepatit ve Sifiliz) ve doku
+        tipleme testlerinin yapılabilmesi için 3 tüp kan örneği alınır. Testler sonucunda herhangi bir enfeksiyon ajanı
+        tespit edilir ise bağışçı olamazsınız ve bu konuda bilgilendirilirsiniz.
+        Eğer enfeksiyon hastalıkları açısından test sonucunuz negatif ise kan örneğiniz HLA (insan lökosit antijeni)
+        doku tipinizin belirlenmesi için TÜRKÖK Doku Tiplendirme Laboratuvarı’na gönderilir ve test sonuçları Kemik
+        İliği Bankası’na aktarılır.
+        Periferik kök hücre veya kemik iliği nakli bekleyen hastalar için bağışçı adayı olmak istiyorsanız ülkemizde ve
+        dünyada nakil olmayı bekleyen herhangi bir hasta için sizin verileriniz de değerlendirmeye alınacaktır.
+      </p>
+      <b>Eşleşme ve Nakil Süreci ile ilgili Açıklamalar:</b>
+      <br><br>
+      <b>1. Bilgilendirme Görüşmesi:</b>
+      <p>TÜRKÖK taramalarında bir hasta ile uyum tespit edilmesinden sonra, Türk Kızılay yetkilisi tarafından sizinle
+        bir görüşme gerçekleştirilir. Görüşme sonrası doku uyumunuzun yeniden değerlendirilmesi için sizden yeni kan
+        örnekleri alınır ve TÜRKÖK Doku Tipleme Laboratuvarı’na gönderilir.
+        <br><br>
+        <b>2. Doku Uyumu Doğrulama Testi:</b><br>
+      <p> Doku uyumunuzun yeniden doğrulanması testi için, sizden alınan yeni kan örnekleri ve hastadan alınan yeni kan
+        örnekleri TÜRKÖK Doku Tipleme Laboratuvarı tarafından çalışılır. Doğrulama testleri sonrası Türk Kızılay
+        yetkilisi sizinle tekrar temasa geçer; nakil günü ve kök hücre toplama işlemi için hastanın doktorunun hangi
+        yöntemi tercih ettiği bilgisini verir. Ama sizin son kararınız önemlidir ve bu karar doktora iletilir. Kabul
+        etmeniz durumunda T.C. Sağlık Bakanlığı tarafından belirlenen kişiler eşliğinde sağlık muayenesi ve tetkik
+        işlemleriniz başlatılır.
+        <br>
+      </p>
+      <b>3. Sağlık Muayenesi ve Tetkikler:</b><br>
+      <p> Uygunluğunuzun belirlenmesi amacı ile ayrıntılı fizik muayeneniz yapılır. Elektrokardiyografi (EKG), akciğer
+        filmi ve çeşitli testler (idrar, kan testleri, kadınlar için hamilelik testleri gibi) yapılır. Bu testler
+        bağışın, sizi ve hastayı herhangi bir risk altına sokmayacağından emin olmak için yapılır.
+        Muayene, tıbbi işlemler ya da süreç ile ilgili diğer harcamalar konusunda bağışçıdan hiçbir ücret talep edilmez
+        ve Bağışçının sosyal güvenliği kesinlikle kullanılmaz.
+        Nakil sonrasında ilk bir ay içerisinde TÜRKÖK tarafından tekrar sağlık muayeneniz yaptırılır.
+        <br>
+      </p>
+      <b>4. Zaman Planlaması:</b><br>
+      <p> Ortalama bir bağış süreci 4-6 haftalık bir zaman aralığında 20-30 saatlik bir zamanınızı alır. Herhangi bir
+        zaman diliminde bağış kararından vazgeçme hakkına sahipsiniz. Ancak sizinle nakil planlaması yapıldıktan sonra,
+        hastaya nakil için tedavi başlandığından dolayı kararınızdan vazgeçerseniz, hasta için hayati tehlike
+        oluşabilir.
+
+        Muayene, tıbbi işlemler ya da diğer bağış ile ilgili harcamalar konusunda bağışçıdan hiçbir ücret talep edilmez
+        ve Bağışçının sosyal güvenliği kesinlikle kullanılmaz.
+
+        Herhangi bir zaman diliminde bağış kararından vazgeçme hakkına sahipsiniz. Ancak kök hücre bağışçısı olarak
+        uygun bulunduktan sonra, özellikle hasta nakil için tedaviye başladıktan sonra kararınızdan vazgeçerseniz,
+        hastada hayati tehlike oluşabilir.
+      </p>
+
+      <b>GİZLİLİK:</b>
+      <p>
+        TÜRKÖK, hasta ve bağışçının gizliliğini korumayı taahhüt eder. Bağışçı ve hastanın kişisel bilgilerinin
+        saklanması yasalar gereğidir. Gizliliğin sağlanması konusunda bizimle iş birliği yapmanız beklenir. Gizlilik
+        için verilmiş olan bu söz, hem bağışçıyı hem de hastayı istenmeyen tanıtım, temaslar, bağışa zorlama ya da para
+        teklif edilmesi gibi durumlardan korumak içindir. Bağışçıya hastayla ilgili sadece hastanın yaş grubu, cinsiyeti
+        ve hastalığı hakkında bilgi verilirken; hastaya ise bağışçının yaş ve cinsiyeti hakkında bilgi verilir.
+      </p>
+
+      <b>BAĞIŞ SONRASINDA HASTA İLE İLETİŞİM:</b>
+      <p>
+        Bağıştan sonraki ilk 2 yıl boyunca, hastaya, içerisinde özel bilgilerinizi içermeyen mektup yazmanıza izin
+        verilir. Bu iletişim kesinlikle isim, adres, telefon numarası, şehir, ülke gibi iletişim bilgilerini
+        içermemelidir. Bu mektup TÜRKÖK aracılığı ile hastaya ulaştırılır. Bağıştan 2 yıl sonra hem hastanın hem de
+        bağışçının görüşme talebinde bulunması halinde direk iletişime geçmenize izin verilir. Tek taraflı görüşme
+        taleplerinde isteğiniz geri çevrilir.
+      </p>
+
+
+      </p>
+
+    </div>
+
+
+    <!--aside&sidenav-------------------------------------------------------->
+
+    <div class="aside1"></div>
+
+    <div id="sidenav">
+
+      <a href="b_homepage.html"> Ana Sayfa</a> <!-- active yapmayı unutma-->
+
+      <a href="c_blood_donation_test.html"> Donör Yeterlilik Testi</a>
+
+      <a href="d_faq.html">Sıkça Sorular Sorular</a>
+
+      <a href="#contact">Makaleler</a>
+
+      <a href="#navPhoto"></a><img id="navphoto" src="../b_homepage_photos\aside\navphoto2.jpg">
+
+      <a href="#contact">Haberler</a>
+
+      <a href="#clients">Öneri & Şikayetler</a>
+
+      <a href="#contact">Kullanıcı Girişi</a>
+
+
+
+    </div>
+
+
+
+    <!--Content of footer-distributed -------------------------------------------------------->
+    <div class="footer-distributed">
+      <footer>
+
+        <div class="footer-left">
+
+          <h3>Donör<span>Yeterlilik</span></h3>
+
+          <p class="footer-links">
+            <b>FAYDALI BAĞLANTILAR:<b><br>
+
+                <a href="#" class="link-2">Kızılay.com.tr</a>
+
+                <a href="#">Kanver.com</a>
+
+                <a href="#">Kan.org.tr</a>
+
+                <a href="#">Icrc.org</a>
+
+                <a href="#">Ifrc.org</a>
+          </p>
+
+          <p class="footer-company-name">DonörYeterlilik © 2021</p>
+        </div>
+
+        <div class="footer-center">
+
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Aydınlı, Leylak Sk. 2-12, 34953 </span> Tuzla/İstanbul</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+90 532 263 80 59</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">baris.devrim1@gmail.com</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+
+          <div class="footerbutton">
+            <a href="#logo">Sayfa Başı</a>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+
+
+
+
+    <script>
+
+      // animated collapsibles
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+
+
+
+      // script of section1 slideshow ----------------------------------------------->
+      var slideIndex = 1;
+
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+      }
+
+
+    </script>
+
+</body>
+
+</html>

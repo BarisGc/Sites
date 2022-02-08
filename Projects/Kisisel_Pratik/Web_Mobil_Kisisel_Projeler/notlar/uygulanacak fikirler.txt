@@ -1,0 +1,22 @@
+1) anasayfada randavu tıklayınca alert ile sorsun, test oldunuz mu evet? hayır? hayır ama merkezde test olmak istiyorum
+2) donör yeterlilik testi sonucu için backend'de hem asp ile hem de js ile sonuç al, cevap verdir. Bunu formu gönderirken sordur. Hatta birinde sql, diğerinde nosql kullan.
+3) sidebar içine birkaç tane drowdown menu koy, süreli hover olsun bunlar
+4) Bağış noktaları sekmesinde geo api kullan, başka bir yelrerde de video youtube tag api vs kullan
+N1) Body kısmında variable olarak tanımlı renkler, fontlar vesaire tanımlayarak başla
+N2) Api'ler kullan
+N3) Grid'de repeat() kullan, değişiklik olsun.
+N4) Css stylesheet, her sayfadaki sabit bölümlerde kullanılanacaklar 1 sheet'de toplansın, onu kullan her html sayfasında.
+N5) "Css in js" veya bu tarz css yöntemleri kullan
+
+
+
+
+
+<input type="image" src="question-mark.svg" alt="Info Mark" id="questioninfo" onclick="qinfoFunc(document.getElementById('questioninfo').value)">
+
+
+
+
+
+Alt + 96 = `
+Alt + 0180 = ´

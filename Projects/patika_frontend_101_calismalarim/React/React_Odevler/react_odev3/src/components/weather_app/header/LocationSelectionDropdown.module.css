@@ -1,0 +1,14 @@
+.app {
+  padding:25px;
+  margin:0;
+  background-color:#D6E5FA ;
+  font-family: cursive;
+}
+
+.select {
+  width: 25%;
+}
+
+p {
+font-style: italic;
+}

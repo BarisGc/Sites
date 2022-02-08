@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom Css -->
+
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+    
+        body {
+            background-color: #E9ECEF;
+        }
+        .navBrandColor {
+            color:red;
+        }
+        
+        .text-responsive-h1 {
+        font-size: calc(100% + 1vw + 1vh);
+        }
+
+        .text-responsive-h2 {
+        font-size: calc(50% + 1vw + 1vh);
+        }
+
+        .text-responsive-p {
+        font-size: calc(25% + 1vw + 1vh);
+        }
+
+        @media only screen and (max-width: 600px) {
+            #karsilama_mesaji {
+            width: 125px;
+            
+            }    
+        }
+
+       
+
+    </style>
+        
+    <title>Keçe Market</title>
+    
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="300">
+    
+            <!-- Navbar Start -----------  navbar fixed yapınca: 1) header'a margin veya body'e padding eklemek gerekiyor, başka bir yolu yok mu? normali bu mu?  -->
+            <!-- Navbar End -->
+            <!-- Header Start -->
+            <!-- Header End -->
+            <!-- Section Start -----------  1) scrollspy için relative parent ihtiyacından dolayı body kullandım. Cardların parentına yani containera gerekli data özelliklerini koydum çalışmadı, neden? 2)boostrap 5 dokümantasyonundaki scrollspy liste neden çalışmadı? 3) mx-auto ürün kategorileri sekmesindeki yazıyı neden ortalamıyor? 4) mx-auto div class olarak mı yoksa div içindeki element class olarak mı yazılmalı? 5) "Ürün Kategorileri" aside kısmı nasıl sticky yaparız?-->
+            <!-- Section End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark  ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger my-auto fs-3 " href="index.html">
+                <img src = "seallogo.svg" alt="brandlogo">
+                 Keçe Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ürünlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+      <div class="container-fluid">
+        <section class="row ">
+          <div class="col-12  border-bottom border-secondary mt-0 p-3 text-dark rounded-3" style="background-color: #dadada">
+                    <div id="karsilama_mesaji" class="col-2 offset-5 text-secondary text-responsive-h1 mx-auto">
+                        <h1> Ürünlerimiz</h1>
+                    </div>
+                    
+                </div>  
+          </div>
+        </section>
+    </div>  
+    <!-- Header End -->
+
+    <!-- Section Start -->
+
+
+    
+
+    <div class="container mt-5" id="scrollspy" >
+        <div class="row ">
+            <div class="col-4 sticky-top d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;" >
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <span class="fs-4 mx-auto text-primary" style="width: 280px;">Ürün Kategorileri</span> <!-- mx-auto neden ortalamıyor?-->
+                  </a>
+                  <hr>
+                                <div id="list-example" class="list-group">
+                                    <a class="list-group-item list-group-item-action active bg-li" href="#list-item-1">Otomotiv Keçeleri</a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-2">Beyaz Eşya Keçeleri</a>
+                                </div>
+            </div>   
+            <div class="col-8">  
+            <!-- <div class="col-8" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">      body yerine buraya koymak istiyorum          -->
+                                <div>
+                                            <div class="bg-light border-bottom border-1 border-secondary">
+                                                <h4 class="mx-auto pt-2 fs-2 text-success  " style="width:280px" id="list-item-1">Otomotiv Keçeleri</h4>
+                                                
+                                            </div>
+                                        <div class="row row-cols-1 row-cols-md-2 g-4 my-1">
+                                            <div class="col ">
+                                                <div class="card h-100 ">
+                                                    <img class="card-img-size" src="keçe1.jpg"  class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title">DMK-9983-AE01-1</h5>
+                                                    <p class="card-text">21.00	36.00	40.00	7.30	0.00	KK-4.6	AE01	Döner mil keçesi</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                    <small class="text-muted">13&nbsp&#8378</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                            <div class="card h-100">
+                                                <img class="card-img-size"src="keçe2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                <h5 class="card-title">DMK-8508-NB01-1</h5>
+                                                <p class="card-text">15.87	39.60	0.00	11.11	11.50	KK-5.O	NB01	Döner mil keçesi	</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                <small class="text-muted">21&nbsp&#8378</small>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="col ">
+                                                <div class="card h-100 ">
+                                                    <img class="card-img-size" src="keçe1.jpg"  class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title">DMK-8508-NB17-1</h5>
+                                                    <p class="card-text">15.87	39.60	0.00	11.11	11.50	KK-5.O	NB17	Döner mil keçesi	</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                    <small class="text-muted">45&nbsp&#8378</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col ">
+                                                <div class="card h-100 ">
+                                                    <img class="card-img-size" src="keçe1.jpg"  class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title">DMK-8873-NB01-1</h5>
+                                                    <p class="card-text">40.80	82.90	0.00	8.00	10.00	KK-5.O	NB01	Döner mil keçesi	</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                    <small class="text-muted">44&nbsp&#8378</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                            <div class="bg-light border-bottom border-1 border-secondary">  <!-- mx-auto ve style width buraya mı yazılmalıydı?-->
+                                                <h4 class="mx-auto mt-4 pt-2 fs-2 text-success  " style="width:280px" id="list-item-2">Beyaz Eşya Keçeleri</h4>
+                                                
+                                            </div>
+                                        <div class="row row-cols-1 row-cols-md-2 g-4 my-1">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <img class="card-img-size"src="keçe3.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                    <h5 class="card-title">DMK-8825-NB17-1</h5>
+                                                    <p class="card-text">10.00	24.00	0.00	7.00	4.00	KK-5.O	NB17	Döner mil keçesi	</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                    <small class="text-muted">33&nbsp&#8378</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                    <div class="card h-100">
+                                                    <img class="card-img-size"src="keçe4.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">DMK-8825-VQ01-1</h5>
+                                                        <p class="card-text">10.00	24.00	0.00	7.00	4.00	KK-5.O	VQ01</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <small class="text-muted">22&nbsp&#8378</small>
+                                                    </div>
+                                                    </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                <img class="card-img-size"src="keçe4.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">DMK-8873-FK01-1</h5>
+                                                    <p class="card-text">40.80	82.90	0.00	8.00	10.00	KK-5.O	FK01</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">15&nbsp&#8378</small>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                            <img class="card-img-size"src="keçe4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">DMK-8873-NB01-1</h5>
+                                                <p class="card-text">40.80	82.90	0.00	8.00	10.00	KK-5.O	NB01</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="text-muted">10&nbsp&#8378</small>
+                                            </div>
+                                            </div>
+                                    </div>
+                                        </div>
+                                </div>
+            </div>  
+        </div>
+    </div>
+
+            
+            
+          
+
+            
+    
+
+     <!-- Section End -->
+
+
+
+
+      
+    
+
+    
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+
+</html>

@@ -1,0 +1,8 @@
+.App {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height:100vh; /* align center demez isen tüm ekran boyunu işleme alıyor çünkü default değeri strech oluyor :) */
+  
+}
+

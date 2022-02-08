@@ -1,0 +1,12 @@
+How to specify no word-wrapping in table header cell (with CSS):
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th style="white-space:nowrap">My Savings for a new car</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>

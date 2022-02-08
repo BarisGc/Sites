@@ -1,0 +1,23 @@
+.weatherApiListUlDom {
+    background-color: #CCD1E4 ;
+    margin: 0px;
+    
+}
+.weatherApiListUlDom > li {
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding:5px 0px 5px 0px;
+    margin:5px 0px 5px 0px;
+}
+
+.weatherApiListUlDom > li > div {
+   margin-top:5px;
+   padding: 5px;
+}
+.CurrentDayLIDOM {
+    border: 1px solid gray;
+    background-color: #D9D7F1;
+}

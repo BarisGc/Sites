@@ -1,0 +1,7 @@
+1) Blood donation application system web sitesi formatında.
+2) Acil durumlar için bir mobil uygulaması, web uygulaması alternatif olarak iyi olmasa da olabilir.
+2.1) Hangi aksiyon alınacaksa anasayfadaki veya tuşa atanması sonucu tek bir işlemde o video çekimi, ses kaydı vb. gibi aksiyonlar
+direk işleme başlayacak ve daha önceden tanımlanmış platformlara yüklenecek ve mümkünse silinebilmesi için onay isteyecek.
+Acil durumlar için rehberdeki kişilerle konum paylaşma, hemen otomatik 112 aranıp karşı tarafın sesinin engellenip
+kullanıcının ses girişinin hoparlöre çekilmesi gibi seçenekler olabilir.
+3) Kod parçacıklarını not olarak kaydedebileceğin ve etiketleme sayesinde hemen ulaşabileceğin, gruplayabileceğin bir notepad türü tool

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>** KÜLTÜR SANAT **</title>
+    <meta name="description" content="Kültür sanat eğitimi web site çalışması anasayfa">
+    <meta name="keywords" content="Kültür Sanat, Kültür, Sanat">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header id="ust" class="fixed-top">
+        <div class="container-xl">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="resim/LOGO.png" alt="Kültür Sanat Logo">
+                </a>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#acilirMenu"
+                    aria-controls="acilirMenu" aria-expanded="false" aria-label="Üst Açılır Menü">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="acilirMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                ANASAYFA
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="hakkimizda.html" class="nav-link">
+                                HAKKIMIZDA
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sehirler.html" class="nav-link">
+                                ŞEHİRLER
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="muzeler.html" class="nav-link">
+                                MÜZELER
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="iletisim.html" class="nav-link">
+                                İLETİŞİM
+                            </a>
+                        </li>
+                        <li class="nav-item sosyal-icon">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="yonlendirme">
+        <div class="container-xl">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+                </ol>
+              </nav>
+        </div>
+    </section>
+    <section class="icerik">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center mb-3">
+                        BİZİMLE İLETİŞİM KURUN
+                    </h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.0579775971614!2d29.327620315028128!3d40.870601835835075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad959ecfda153%3A0x8b3bfff3e68a6563!2zxLBzbWVrIC0gVHV6bGEgQXlkxLFubMSx!5e0!3m2!1str!2str!4v1636565239400!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="adresBilgileri">
+        <div class="container-xl">
+            <h2 class="ozelBaslik">
+                İLETİŞİM BİLGİLERİ
+            </h2>
+            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                <div class="col">
+                    <div class="kutu h-100">
+                        <div class="kutuIcon">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="kutuBaslik">
+                            Telefon
+                        </div>
+                        <p>
+                            <i class="fa fa-phone"></i>
+                            0216 000 00 00
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="kutu h-100">
+                        <div class="kutuIcon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="kutuBaslik">
+                            E-mail
+                        </div>
+                        <p>
+                            mail@mail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="kutu h-100">
+                        <div class="kutuIcon">
+                            <i class="fa fa-map-o"></i>
+                        </div>
+                        <div class="kutuBaslik">
+                            Adres
+                        </div>
+                        <p>
+                            Aradabul Mh. Buldum geliyorum Sk. No:xx Tuzla / İst.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="iletisim">
+        <div class="container-xl">
+            <h2 class="ozelBaslik">
+                İLETİŞİM FORMU
+            </h2>
+            <form class="row justify-content-center" method="POST" onsubmit="return kontrol()">
+                <div class="col-11 col-sm-8">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="adSoyad" id="adSoyad" class="form-control" placeholder="Ad Soyad">
+                        <label for="adSoyad"> Ad Soyad</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" name="mailAdresi" id="mailAdresi" class=" form-control" placeholder="E-mail">
+                        <label for="mailAdresi">E-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="telefon" id="telefon" placeholder="Telefon" class="form-control">
+                        <label for="telefon">Telefon</label>
+                    </div>
+                    <p class="text-center">
+                        <button class="ozelButon border-0" type="submit">
+                            GÖNDER
+                        </button>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <div class="p-4 text-center text-light">
+            &copy; 2021 İSMEK TÜM HAKLARI SAKLIDIR
+        </div>
+    </footer>
+    <a href="#" class="yukari">
+        <img src="resim/page-up.png" alt="yukarı">
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

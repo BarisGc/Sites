@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonOturumAc:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.card_egitimci_kurs_baslik {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1c1d1f;
+}
+
+.card_egitimci_ismi {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  color: #6a6f73;
+}
+
+.card_egitimci_puan {
+  color: #b4690e;
+}
+
+.card_egitimci_yildizlar img {
+  width: 60px;
+  margin-left: 1px;
+  margin-bottom: 2px;
+}
+
+.card_egitimci_yorumsayisi {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  color: #6a6f73;
+}
+
+.card_egitimci_kursfiyati1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1c1d1f;
+}
+
+.card_egitimci_kursfiyati2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #6a6f73;
+  text-decoration: line-through;
+}
+
+.card_egitimci_encoksatanKontrol {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3d3c0a;
+  background-color: #eceb98;
+  padding: 5px;
+  display: inline-block;
+}
+
+.carouselBillboard .card-img-overlay h5 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1c1d1f;
+}
+
+.carouselBillboard .card-img-overlay p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1c1d1f;
+}
+
+.HeaderNavbar {
+  -webkit-box-shadow: 0px 12px 12px 0px #e3e3e3;
+  box-shadow: 0px 12px 12px 0px #e3e3e3;
+}
+
+.egitimCards .card {
+  border: 0;
+}
+.egitimCards img {
+  width: 400px;
+  height: 400px;
+}
+
+.egitimCards h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1c1d1f;
+}
+
+.egitimCards p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  color: #1c1d1f;
+}
+
+.egitimCards button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.footer1 ul {
+  list-style-type: none;
+}
+
+.footer1 li {
+  margin-top: 10px;
+}
+
+.footer1 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.modal-content {
+  background-color: rgb(198, 255, 238) !important;
+  height: 400px;
+}
+#exampleModal a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1c1d1f;
+  margin: 10px;
+}
+#exampleModal a:hover {
+  color: #401b9c;
+}
+
+.FeaturedTopicsByCategory {
+  background-color: #f7f9fa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #1c1d1f;
+}
+
+.FeaturedTopicsByCategory ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.FeaturedTopicsByCategory h3 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #1c1d1f;
+  margin-bottom: 20px;
+}
+
+.FeaturedTopicsByCategory a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #401b9c;
+}
+
+.FeaturedTopicsByCategory a + div {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6a6f73;
+  margin-top: 5px;
+}
+
+.informationBar {
+  background-color: #f7f9fa;
+
+  height: 105px;
+}
+
+.informationBar img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.informationBar div {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1c1d1f;
+}
+
+.KapsamlıKursSeçkisiCarousel.carousel-control-prev {
+  width: 0px;
+  height: 0px;
+  opacity: 1;
+}
+
+.KapsamlıKursSeçkisiCarousel .KapsamlıKursSeçkisiCarouselButtonsPrev {
+  background-color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 61px;
+  left: -25px;
+  opacity: 1;
+}
+
+.KapsamlıKursSeçkisiCarousel.carousel-control-next {
+  width: 0px;
+  height: 0px;
+  opacity: 1;
+}
+
+.KapsamlıKursSeçkisiCarousel .KapsamlıKursSeçkisiCarouselButtonsNext {
+  background-color: black;
+  border-radius: 50%;
+  opacity: 1;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 61px;
+  right: -25px;
+}
+
+.KapsamlıKursSeçkisiCarouselButtonsNext .carousel-control-next-icon {
+  position: absolute;
+  left: 10px;
+  top: 7.5px;
+}
+.KapsamlıKursSeçkisiCarouselButtonsPrev .carousel-control-prev-icon {
+  position: absolute;
+  right: 10px;
+  top: 7.5px;
+}
+
+.MainCarousel2.carousel-control-prev {
+  width: 0px;
+  height: 0px;
+  opacity: 1;
+}
+
+.MainCarousel2 .MainCarousel2Prev {
+  background-color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 61px;
+  left: -25px;
+  opacity: 1;
+}
+
+.MainCarousel2.carousel-control-next {
+  width: 0px;
+  height: 0px;
+  opacity: 1;
+}
+
+.MainCarousel2 .MainCarousel2Next {
+  background-color: black;
+  border-radius: 50%;
+  opacity: 1;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 61px;
+  right: -25px;
+}
+
+.MainCarousel2Next .carousel-control-next-icon {
+  position: absolute;
+  left: 10px;
+  top: 7.5px;
+}
+.MainCarousel2Prev .carousel-control-prev-icon {
+  position: absolute;
+  right: 10px;
+  top: 7.5px;
+}
+
+.KapsamlıKursSeçkisi > h1 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #1c1d1f;
+  font-weight: 700;
+}
+
+.KapsamlıKursSeçkisi > p {
+  font-size: 19px;
+  line-height: 27px;
+  color: #1c1d1f;
+  font-weight: 400;
+}
+
+.KapsamlıKursSeçkisiCards .card.h-100 {
+  border: 0;
+  margin-top: 20px;
+}
+
+.KapsamlıKursSeçkisi + .nav-pills button {
+  font-weight: 500;
+}
+
+.kursItemHeader {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.kursItemParagraph {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.kursItemButton {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.languageIcon button {
+  border-width: 1px;
+  border-color: black;
+}
+
+.languageIcon:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.nav-pills > li > button.active {
+  background-color: #ffffff !important;
+  color: #1c1d1f !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.nav-pills > li > button:hover {
+  background-color: #ffffff !important;
+  color: #1c1d1f !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.nav-pills > li > button {
+  background-color: #ffffff !important;
+  color: #6a6f73 !important;
+}
+
+.navBarInputGroupBorders span {
+  border-right: 0;
+  border-radius: 20px;
+  border-color: #1c1d1f;
+}
+
+.navBarInputGroupBorders input {
+  border-left: 0;
+  border-radius: 20px;
+  border-color: #1c1d1f;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1c1d1f;
+}
+
+.img-hover-zoom {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.popülerKategoriler a {
+  text-decoration: none;
+}
+
+.popülerKategoriler figcaption {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1c1d1f;
+}
+
+.referencesBar {
+  background-color: #f7f9fa;
+}
+
+.referencesBarImages > div {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.smartBar {
+  background-color: #5624d0;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+}
+
+.smartBar div {
+  margin-left: auto;
+}
+
+.smartBar div:last-of-type {
+  padding-right: 1.5rem;
+}
+
+.shoppingIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* media rules */
+
+@media (min-width: 1400px) {
+  .navBarInputGroupBorders .form-control {
+    width: 920px;
+  }
+
+  .navbar {
+    height: 70px;
+  }
+}
+
+#carouselExampleControls2 {
+  height: 275px;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .navBarInputGroupBorders .form-control {
+    width: 420px;
+  }
+  .navbar {
+    height: 70px;
+  }
+}
