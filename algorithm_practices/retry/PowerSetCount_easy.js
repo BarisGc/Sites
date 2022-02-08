@@ -4,26 +4,22 @@
 // console.log(getAllSubsets([1, 2, 3]));
 
 // [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+console.log(PowerSetCount([1, 2, 3]))
+
 function PowerSetCount(arr) {
-    const subsets = [[]]
-    console.log([1, 2, 3])
-    let counter = 1;
-    for (const element of arr) {
-        subsets.forEach(subset => {
-            subsets.push([...subset, element])
-            console.log("subsets", subsets, "counter", counter)
-            counter++
-        }
-        )
+    const subset = [[]]
+    for (const elementArr of arr) {
+        subset.forEach(elementSubset => {
+            subset.push([...elementSubset, elementArr])
+        });
     }
-    return subsets
+    return subset
 }
 
-PowerSetCount([1, 2, 3])
 
-// console.log(PowerSetCount(arguments[0]))
 
-// var getAllSubsets = (nums) => {
+// Alternative Solution-1
+// var PowerSetCount = (nums) => {
 //     const subsets = [[]];
 //     for (n of nums) {
 //         subsets.map((el) => {
