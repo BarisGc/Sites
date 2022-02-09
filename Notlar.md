@@ -358,6 +358,21 @@ export default processData; //ok
 - <> is the shorthand tag for React.Fragment which allows us to group a list of elements without wrapping them in a new node. The only difference between them is that the shorthand version does not support the key attribute.
 - todolist: setItems([...items, {name:text}]) yada setItems((prev)=>[...prev, {name:text}])
 
+# ** React-TestingWithJest **
+- // React Testing Library provides you with several methods to find an element by specific attributes in addition to the getByText() method above:
+
+// getByText(): find the element by its textContent value
+// getByRole(): by its role attribute value
+// getByLabelText(): by its label attribute value
+// getByPlaceholderText(): by its placeholder attribute value
+// getByAltText(): by its alt attribute value
+// getByDisplayValue(): by its value attribute, usually for <input> elements
+// getByTitle(): by its title attribute value
+
+// And when these methods are not enough, you can use the getByTestId() method, which allows you to find an element by its data-testid attribute:
+// But since selecting elements using data-testid attributes doesn't resemble how a real user would use your application, the documentation recommends you use it only as the last resort when all other methods fail to find your element. Generally, finding by Text, Role, or Label should cover most cases.
+- 
+
 # **Docker**
 - docker images -  docker run -it ubuntu -  docker ps veya docker container ls -  docker ps --all veya docker container ls -a - docker container rm $(docker container ls -aq) hepsini siler
 - "docker run redis:5" " docker run -d redis (detach mod yani arka planda çalışsın) " " docker attach 'id'(detach olanı attach yapar öne getirir"
