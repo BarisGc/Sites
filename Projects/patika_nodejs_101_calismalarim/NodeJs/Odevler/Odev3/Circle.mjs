@@ -1,6 +1,4 @@
 
-
-
 const circleAreaFunc = (input_radius) => {
 
     console.log(` If radius is ${input_radius}, area of circle is ${(Math.PI * Math.pow(input_radius, 2)).toFixed(1)}`)
