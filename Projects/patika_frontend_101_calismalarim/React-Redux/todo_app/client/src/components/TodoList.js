@@ -4,7 +4,8 @@ import Loading from './Loading'
 import Error from './Error'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { selectFilteredTodos, getTodosAsync, toggleTodosAsync, removeTodosAsync } from '../redux/todos/todosSlice'
+import { getTodosAsync, toggleTodosAsync, removeTodosAsync } from '../redux/todos/services'
+import { selectFilteredTodos } from '../redux/todos/todosSlice'
 
 function TodoList() {
     const dispatch = useDispatch()

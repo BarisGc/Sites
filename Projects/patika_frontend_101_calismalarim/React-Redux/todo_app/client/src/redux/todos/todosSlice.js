@@ -1,31 +1,14 @@
 //completed basılırsa işlem görmesi geliştirilecek, backend tarafında root url vb. ayarlamak gerekiyor.
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from 'axios'
+import { createSlice } from "@reduxjs/toolkit";
+
+import { getTodosAsync, addTodosAsync, toggleTodosAsync, removeTodosAsync } from "./services";
 
 // export const getTodosAsync = createAsyncThunk('todos/getTodosAsync', async () => {
 //     const res = await fetch('http://localhost:7000/todos');
 //     return await res.json()
 // })
 //bunun yerine axios tercih ettik
-export const getTodosAsync = createAsyncThunk('todos/getTodosAsync', async () => {
-    const res = await axios(`${process.env.REACT_APP_API_BASE_ENDPOINT}/todos`);
-    return res.data
-})
 
-export const addTodosAsync = createAsyncThunk('todos/addTodosAsync', async (data) => {
-    const res = await axios.post(`${process.env.REACT_APP_API_BASE_ENDPOINT}/todos`, data);
-    return res.data
-})
-
-export const toggleTodosAsync = createAsyncThunk('todos/toggleTodosAsync', async ({ id, data }) => {
-    const res = await axios.patch(`${process.env.REACT_APP_API_BASE_ENDPOINT}/todos/${id}`, data);
-    return res.data
-})
-
-export const removeTodosAsync = createAsyncThunk('todos/removeTodosAsync', async (id) => {
-    await axios.delete(`${process.env.REACT_APP_API_BASE_ENDPOINT}/todos/${id}`);
-    return id
-})
 
 export const todosSlice = createSlice({
     name: 'todos',
@@ -33,9 +16,13 @@ export const todosSlice = createSlice({
         items: [],
         isLoading: false,
         error: null,
-        activeFilter: 'all',
-        addNewTodoIsLoading: false,
-        addNewTodoError: null,
+        activeFilter: localStorage.getItem('activeFilter'),
+        // addNewTodoIsLoading: false,
+        // addNewTodoError: null,
+        addNewTodo: {
+            isLoading: false,
+            error: false,
+        },
     },
     reducers: {
         // addTodo: {
@@ -87,15 +74,15 @@ export const todosSlice = createSlice({
         },
         // add todo
         [addTodosAsync.pending]: (state, action) => {
-            state.addNewTodoIsLoading = true
+            state.addNewTodo.isLoading = true
         },
         [addTodosAsync.fulfilled]: (state, action) => {
             state.items.push(action.payload)
-            state.addNewTodoIsLoading = false
+            state.addNewTodo.IsLoading = false
         },
         [addTodosAsync.rejected]: (state, action) => {
-            state.addNewTodoIsLoading = false;
-            state.addNewTodoError = action.error.message;
+            state.addNewTodo.IsLoading = false;
+            state.addNewTodo.Error = action.error.message;
         },
         // toggle todo
         [toggleTodosAsync.fulfilled]: (state, action) => {
