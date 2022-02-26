@@ -1,0 +1,72 @@
+<%- include('partials/_header_forEdit') -%>
+
+    <body>
+        <!-- Navigation-->
+        <%- include('partials/_navigation_forEdit') -%>
+            <!-- Page Header-->
+            <header class="masthead" style="background-image: url('/assets/img/edit-bg.jpg')">
+                <div class="container position-relative px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <div class="page-heading">
+                                <h1>Be Careful</h1>
+                                <span class="subheading">Anyway, You Are Free To Edit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Main Content-->
+            <main class="mb-4">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <h2 class="tm-page-title mb-4 tm-text-primary">Edit The Post</h2>
+                            <p>
+                                Cake ice cream tiramisu shortbread tart tiramisu cookie carrot cake icing. Cake
+                                soufflé cheesecake oat cake
+                            </p>
+                            <div class="my-5">
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- * * SB Forms Contact Form * *-->
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- This form is pre-integrated with SB Forms.-->
+                                <!-- To make this form functional, sign up at-->
+                                <!-- https://startbootstrap.com/solution/contact-forms-->
+                                <!-- to get an API token!-->
+                                <form method="POST" action="/posts/<%= post._id %>?_method=PUT" class="tm-contact-form"
+                                    encType="multipart/form-data">
+                                    <div class="form-group">
+                                        <input type="text" name="title" value="<%= post.title %>"
+                                            class="form-control rounded-0" placeholder="Post Title" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea rows="8" name="detail" class="form-control rounded-0"
+                                            placeholder="Post Detail" required><%= post.detail %></textarea>
+                                    </div>
+
+
+                                    <div class="form-group mb-0 mt-4">
+                                        <button type="submit"
+                                            class="btn btn-primary rounded-0 d-block ml-auto mr-0 tm-btn-animate tm-btn-submit tm-icon-submit"><span>Update</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <%- include('partials/_footer') -%>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="/js/scripts.js"></script>
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <!-- * *                               SB Forms JS                               * *-->
+                <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+
+    </html>
