@@ -11,7 +11,7 @@ const pageController = require('./controllers/pageController');
 const app = express();
 
 //Connect DB
-mongoose.connect('mongodb://localhost/pcat-test-db', {
+mongoose.connect('mongodb+srv://BarisGc:GFQ7lEZes1sNHIb3@cluster0.tvnjh.mongodb.net/PCAT-DB?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

@@ -11,9 +11,13 @@ const pageController = require('./controllers/pageController');
 const app = express();
 
 //Connect DB
-mongoose.connect('mongodb://localhost/blog-test-db', {
+mongoose.connect('mongodb+srv://BarisGc:h098Oaqx5OgOt3Ke@cluster0.upph0.mongodb.net/CleanBlog-db?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+}).then(() => {
+    console.log("db connected?")
+}).catch((err) => {
+    console.log(err)
 });
 
 //Template Engine
