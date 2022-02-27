@@ -1,1 +1,0 @@
-1) Older Posts (Pagination for example 3 by 3 at each click)
