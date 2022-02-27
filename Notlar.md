@@ -179,6 +179,7 @@ So we should use map methods: set, get and so on.
 - node
 - console.clear()
 - .load dosyaismi.js
+- mongoose: object document method > nesne dökuman modelleyici > veri tabanları için şablon
 
 
 # **SQL**
