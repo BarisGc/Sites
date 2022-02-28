@@ -180,7 +180,8 @@ So we should use map methods: set, get and so on.
 - console.clear()
 - .load dosyaismi.js
 - mongoose: object document method > nesne dökuman modelleyici > veri tabanları için şablon
-
+- postman, önyüz hazır olmadığında simülasyon için kullanılabiliyor, db ile alışveriş yapılabiliyor.
+- problem1: kayıt ekleme problemi yaşarsan mongoDB indexleri kontrol et sonra refresh yap
 
 # **SQL**
 - GROUP BY kullanıyorsan, SELECT VE GROUP BY kısmında aynı sütun olmalı, ayrıca SELECT kısmında sadece bu aynı sütun ve bir de aggrate func olabiliyor.
