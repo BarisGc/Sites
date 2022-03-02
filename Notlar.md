@@ -182,6 +182,7 @@ So we should use map methods: set, get and so on.
 - mongoose: object document method > nesne dökuman modelleyici > veri tabanları için şablon
 - postman, önyüz hazır olmadığında simülasyon için kullanılabiliyor, db ile alışveriş yapılabiliyor.
 - problem1: kayıt ekleme problemi yaşarsan mongoDB indexleri kontrol et sonra refresh yap
+- Artık Middleware kavramına aşinayız. Özetle istek - cevap (request - response) döngüsü bir ara yazılımlar(middleware) bütünüdür. Bazı durumlarda projemize özel kendi ara yazılımlarımızı oluşturmak isteriz.
 
 # **SQL**
 - GROUP BY kullanıyorsan, SELECT VE GROUP BY kısmında aynı sütun olmalı, ayrıca SELECT kısmında sadece bu aynı sütun ve bir de aggrate func olabiliyor.
