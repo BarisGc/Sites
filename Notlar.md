@@ -385,6 +385,11 @@ export default processData; //ok
 - docker run --name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSOWRD=TEST123 -d mysql (bağlanılacak container)
 - docker run --name pmyadmin -p 8000:80 link mysql-server:db -d phpmyadmin/phpmyadmin (bağlanan container)
 
+# C#
+- dotnet new console
+- main bloku: public >>>>> bu main method her yerden ulaşılabilir | static >>>>> bir nesnesi oluşturulmadan bu main methoda ulaşılabilir | void >>>>> herhangi bir return yapılmayacağını anlatır, mesela bunun yerine int koyulursa bir şeyleri return etmek gerekir | string[] args >>>>> console'dan arguman alır
+- debug settings >>>>> integrated terminal ya da external terminal
+- string datetime = DateTime.Now.ToString("dd.MM.yyyy"); // formatı ayarlar mesela . ile ayırdı | string hour = DateTime.Now.ToString("HH:mm");
 
 
 
