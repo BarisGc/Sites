@@ -184,6 +184,15 @@ So we should use map methods: set, get and so on.
 - postman, önyüz hazır olmadığında simülasyon için kullanılabiliyor, db ile alışveriş yapılabiliyor.
 - problem1: kayıt ekleme problemi yaşarsan mongoDB indexleri kontrol et sonra refresh yap
 - Artık Middleware kavramına aşinayız. Özetle istek - cevap (request - response) döngüsü bir ara yazılımlar(middleware) bütünüdür. Bazı durumlarda projemize özel kendi ara yazılımlarımızı oluşturmak isteriz.
+- // iki boyutlu array 
+  const M = 3, N = 4;
+var arr = Array.from(Array(M), () => new Array(N));
+console.log(arr);
+/*
+    Output: [ [ <4 empty items> ], [ <4 empty items> ], [ <4 empty items> ] ]
+*/
+- 
+ 
 
 # **SQL**
 - GROUP BY kullanıyorsan, SELECT VE GROUP BY kısmında aynı sütun olmalı, ayrıca SELECT kısmında sadece bu aynı sütun ve bir de aggrate func olabiliyor.
@@ -395,6 +404,44 @@ Mantıksal Operatörler (||, &&, !)
 İlişkisel Operatörler (==,!=, <, >, >=,<=)
 Aritmetik (+, -, *, /, %, ++, --)
 - Değer atandıktan sonra arttırma yapıldığı için sonuc1 "10" olarak kalıyor. Bunun yerine sonuc1=++sayi1; yazılırsa çıktı 11 olacaktır.
+- Rank is the property that returns the number of dimensions (a different thing entirely). When you declare an array int[,] myArray = new int[5,10];, the Rank of it will be 2, but it will hold a total of 50 elements
+- Console.WriteLine("Hello, {0}, my name is {1}, "Bill", "Bob"); would print:
+Hello, Bill, my name is Bob
+when
+Console.WriteLine("Hello, {1}, my name is {0}, "Bill", "Bob"); would print:
+Hello, Bob, my name is Bill
+- Please avoid using out parameters.
+Although, they can make sense in certain situations (for example when implementing the Try-Parse Pattern), they are very hard to grasp.
+Chances to introduce bugs or side effects by yourself (unless you are very experienced with the concept) and by other developers (who either use your API or may inherit your code) is very high.
+According to Microsoft's quality rule CA1021:
+Although return values are commonplace and heavily used, the correct application of out and ref parameters requires intermediate design and coding skills. Library architects who design for a general audience should not expect users to master working with out or ref parameters.
+Therefore, if there is not a very good reason, please just don't use out or ref.
+- There is no industry standard here about whether to use extension methods or static classes. Honestly, "extension methods" are in static classes. This is a case where the language designers of C# allow us to have our cake, and eat it to.
+
+Say you've got a traditional "utils" static class:
+
+public static class AppUtils
+{
+    public static string ToStandardDateFormat(DateTime date)
+    {
+        // ... logic to format dates application-wide
+    }
+}
+It's not so bad. You see @AppUtils.ToStandardDateFormat(someDate) in a bunch of razor templates. Pretty standard fare in applications across most tech stacks. With an additional 5 characters of code, you can do both:
+
+public static class AppUtils
+{
+    public static string ToStandardDateFormat(this DateTime date)
+    {
+        // ... logic to format dates application-wide
+    }
+}
+Now you can do either:
+
+@AppUtils.ToStandardDateFormat(someDate)
+@someDate.ToStandardDateFormat()
+There is no guideline. No standard. Flip a coin in many cases. Heads or tails, then get back to coding.
+- The big gain for extension methods is that they allow you to add extra functionality to .Net Framework or 3rd party classes that you don't have the source code for or can't otherwise modify.
 - 
 
 

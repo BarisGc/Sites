@@ -14,7 +14,6 @@ namespace console_programlama
             Console.WriteLine("Merhaba"+ " " + name + " " + surname);
             int degisken = 5;
             Console.WriteLine(degisken);
-            
         }
     }
 }
