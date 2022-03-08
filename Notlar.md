@@ -43,6 +43,7 @@
 -  Toggle Block Comment	Shift+Alt+A	---- Toggle Line Comment	Ctrl+ö
 -  Toggle Find Whole Word	Alt+W ---- Toggle Find Case Sensitive	Alt+C
 -  format document ---- alt+shift+f
+-  shift + tab ----- seçilen bloku sola yanaştırır geçici olarak
 
 
 ## ***Emmet***
