@@ -390,6 +390,12 @@ export default processData; //ok
 - main bloku: public >>>>> bu main method her yerden ulaşılabilir | static >>>>> bir nesnesi oluşturulmadan bu main methoda ulaşılabilir | void >>>>> herhangi bir return yapılmayacağını anlatır, mesela bunun yerine int koyulursa bir şeyleri return etmek gerekir | string[] args >>>>> console'dan arguman alır
 - debug settings >>>>> integrated terminal ya da external terminal
 - string datetime = DateTime.Now.ToString("dd.MM.yyyy"); // formatı ayarlar mesela . ile ayırdı | string hour = DateTime.Now.ToString("HH:mm");
+- Atama ve İşlemli Atama Operatörleri (=, +=, -=, *=, /=)
+Mantıksal Operatörler (||, &&, !)
+İlişkisel Operatörler (==,!=, <, >, >=,<=)
+Aritmetik (+, -, *, /, %, ++, --)
+- Değer atandıktan sonra arttırma yapıldığı için sonuc1 "10" olarak kalıyor. Bunun yerine sonuc1=++sayi1; yazılırsa çıktı 11 olacaktır.
+- 
 
 
 
