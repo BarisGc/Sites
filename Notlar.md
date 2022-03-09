@@ -442,7 +442,7 @@ Now you can do either:
 @someDate.ToStandardDateFormat()
 There is no guideline. No standard. Flip a coin in many cases. Heads or tails, then get back to coding.
 - The big gain for extension methods is that they allow you to add extra functionality to .Net Framework or 3rd party classes that you don't have the source code for or can't otherwise modify.
-- 
+- dotnet new webapi -n HelloWebApi | dotnet new sln -n HelloSln   |  dotnet sln add HelloWebApi  /* vs studio otomatik yapıyormuş bu oluşturma ve bağlamaları */ | dotnet watch run
 
 
 
