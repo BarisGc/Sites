@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "IND+/BLM+c6X88APSam2Mmo2M4BuGkJNQo8pTYn8o83LMpkz9zdc7Z/6ZpLG87zq3xVtGQToxUDyuVUCxnJ/pA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baris_3g410ad\\Documents\\Sites_d\\Sites\\Projects\\patika_dotnetCore_calismalarim\\pratikler\\framework\\4-ornek-webapi-hazırlamak\\HelloWebApi\\HelloWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\baris_3g410ad\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
