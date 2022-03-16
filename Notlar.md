@@ -635,7 +635,7 @@ ch I tend to use for things like paragraph text widths or sizing containers that
 - return item.isActive === true           =   yazma !
 - prop alırken ({actions}) köşeli parantez yazmayı unutma
 - By trying to access the DOM and set innerHTML directly, you're sort of fighting against some of the general principals of React. In this specific case, it's failing because the div doesn't actually exist in the DOM when you first try to mutate it.
-
+- redux'ta api'den veri çekiyorsan "status" yapısı kullan "isLoading" yerine
 ##### Node.Js
 - .env değiştirdiğinde server'ı tekrar başlatmak gerekiyor.
 
