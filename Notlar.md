@@ -97,6 +97,7 @@
 
 # **CSS**
 - min-height:100vh; align center yazılmaz ise tüm ekran boyunu dikkate alıyor çünkü default değeri strech oluyor
+- .sticky-top will not work if it is inside any container. It must be the outside-most element inside <body>
 
 # **Bootstrap**
 - Bootstrap'in tipografik özeliklerini kullanmak için <body> tag'ine $font-family-base, $font-size-base ve $line-height-base niteliklerini uygulamanız gerekmektedir.
