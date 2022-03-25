@@ -90,8 +90,8 @@ namespace _17_genericMethods
             //List içerisinde nesne tutma
             List<Kullanıcılar> kullanıcıListesi = new List<Kullanıcılar>();
             Kullanıcılar kullanıcı1 = new Kullanıcılar();
-            kullanıcı1.Isim = "Berkcan";
-            kullanıcı1.Soyisim = "Gümüşışık";
+            kullanıcı1.Isim = "Barış";
+            kullanıcı1.Soyisim = "Devrim";
             kullanıcı1.Yas = 22;
 
 
